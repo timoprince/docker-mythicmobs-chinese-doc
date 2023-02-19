@@ -1,0 +1,25 @@
+.sidebar-nav li {
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+}
+
+.sidebar-nav ul:not(.app-sub-sidebar)>li:not(.file)>p>a::before {
+    content: '';
+    display: inline-block;
+    border-right: 1px solid #505d6b;
+    border-bottom: 1px solid #505d6b;
+    transform: rotate(-45deg);
+    transition: transform .1s;
+    width: .5em;
+    height: .5em;
+    margin-right: 10px;
+}
+
+.sidebar-nav ul:not(.app-sub-sidebar)>li.open>p>a::before {
+    transform: rotate(45deg)
+}
+
+.sidebar-nav ul:not(.app-sub-sidebar)>li.collapse>p>a::before {
+    transform: rotate(-45deg)
+}
