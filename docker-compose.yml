@@ -1,0 +1,7 @@
+version: '3'
+services:
+  docker-mythicmobs-chinese-doc:
+    image: timoprince/docker-mythicmobs-chinese-doc
+    container_name: docker-mythicmobs-chinese-doc
+    ports:
+      - 4567:4567
